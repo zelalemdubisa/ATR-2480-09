@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Contact Us</title>
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <button id="hamburger">☰</button>
     </header>
-
-    <div>
-        <h1>Contact Us</h1>
+    <script src="script.js"></script>
+    <div class="contact-container">
+        <section class="contact-banner">
+            <h1>Contact Me</h1>
+        </section>
+        <section class="contact-info">
+            <div class="icon"><i class="material-icons">phone</i></div>
+            <div class="icon"><i class="material-icons">email</i></div>
+            <div class="icon"><i class="material-icons">place</i></div>
+        </section>
+        <section class="contact-form">
+            <form>
+                <div class="input-row">
+                    <input type="text" name="fullname" placeholder="Full Name">
+                    <input type="text" name="phone" placeholder="Phone">
+                </div>
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </div>
-
-    <div>
-        <div><i class="material-icons">phone</i></div>
-        <div><i class="material-icons">email</i></div>
-        <div><i class="material-icons">place</i></div>
-    </div>
-
-    <div>
-        <form>
-            <div>
-                <input type="text" name="fullname" placeholder="Full Name">
-                <input type="text" name="phone" placeholder="Phone">
-            </div>
-            <input type="email" name="email" placeholder="Email">
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-
     <footer>
-        <div>
-            <p>&copy; 2022 Zelalem. All rights reserved.</p>
-        </div>
-        <div>
-            <a href="#">S</a>
-            <a href="#">T</a>
-            <a href="#">I</a>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2023 Dubisa. All rights reserved.</p>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-button">S</a>
+                <a href="#" class="social-button">T</a>
+                <a href="#" class="social-button">I</a>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>

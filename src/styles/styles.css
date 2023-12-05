@@ -1,0 +1,361 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Header styles */
+  header {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    justify-content: space-around;
+  }
+  /* Navigation styles */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 0.5em;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin-left: 3em;
+  }
+  nav a:hover {
+    background-color: #555;
+  }
+  /* Main content styles */
+  .container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 2em;
+    min-height: 90vh;
+  }
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 5px;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+}  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    width: 45%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.hero-text {
+    width: 45%;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+  }
+  .cta:hover {
+    background-color: #555;
+  }.cv-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .cv-photo {
+    margin-right: 20px;
+    } 
+    
+    .cv-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    }
+    
+    .cv-details {
+    flex: 1;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .cv-details h2 {
+    margin-top: 0;
+    }
+    
+    .cv-details h3 {
+    margin: 10px 0;
+    }
+    
+    .cv-details p {
+    margin: 10px 0;
+    }
+    .contact-banner {
+      background-color: rgb(50, 50, 50);
+      padding: 20px 0;
+      margin: 30px;
+      text-align: center;
+      border-radius: 20px;
+      }
+      
+      .contact-info {
+      display: flex;
+      justify-content: space-around;
+      margin: 60px;
+      }
+      
+      .contact-form .input-row {
+      display: flex;
+      justify-content: space-between;
+      }
+      
+      .contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 30px;
+    font-size: 16px;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+.contact-form button {
+    width: 30%;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px;
+}
+
+.contact-form button:hover {
+    background-color: #4579B4;
+}
+
+.contact-container {
+  min-height: 100vh;
+}
+
+.services-container {
+  margin: 20px;
+  }
+  
+  .services-banner {
+  background-color: rgb(50, 50, 50);
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  }
+  
+  .services-content {
+  margin: 20px 0;
+  }
+  
+  .service-item {
+  display: flex;
+  flex-direction: row-reverse;
+  }
+  
+  .service-item-reversed {
+    display: flex;
+  }
+  
+  .service-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    }
+
+    .service-item-reversed img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 10px;
+      }
+  
+  .service-item div {
+  width: 50%;
+  padding: 20px;
+  }
+  
+  .bullet-points {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .bullet-points ul {
+  width: 45%;
+  }
+  
+
+ 
+    
+    .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    }
+    
+    .about-item {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 20px;
+    }
+    
+    .about-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    }
+    
+    .about-item div {
+    width: calc(100% - 170px);
+    }
+    
+    .about-item a {
+    display: inline-block;
+    margin-top: 10px;
+    }
+    
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      }
+
+      
+      #hamburger {
+      display: none;
+      width: 30px;
+      }
+      
+     
+      
+      @media (max-width: 600px) {
+      #navbar {
+      display: none;
+      flex-direction: column;
+      }
+
+      header {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+      }
+
+      #hamburger {
+      display: inline-block;
+      }
+     
+      .about-item {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .about-item div {
+        width: 100%;
+      }
+        
+      .about-item a {
+      display: inline-block;
+      margin-top: 10px;
+      }
+
+      .hero-content {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      .hero-image {
+        width: 60%;
+      
+      }
+
+      .hero-text {
+        width: auto;
+        color: black;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .contact-form .input-row {
+      flex-direction: column;
+      }
+
+      .service-item {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      
+      .service-item-reversed {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .bullet-points {
+        flex-direction: column;
+      }
+
+      .cv-container {
+        flex-direction: column;
+      }
+      
+      
+      
+      
+    }
+      

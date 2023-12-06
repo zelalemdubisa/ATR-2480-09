@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="scripts/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Services</title>
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <button id="hamburger">☰</button>
     </header>
-    <div>
-        <section>
+    <script src="scripts/script.js"></script>
+    <div class="services-container">
+        <section class="services-banner">
             <h1>Services</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla purus ut nisi mollis, vitae posuere lorem congue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla purus ut nisi mollis, vitae
+                posuere lorem congue.</p>
         </section>
-        <section>
-            <div>
+        <section class="services-content">
+            <div class="service-item">
                 <img src="https://via.placeholder.com/150" alt="Service 1">
                 <div>
                     <h2>Service 1</h2>
                     <p>Description of service 1</p>
                 </div>
             </div>
-            <div>
+            <div class="service-item-reversed">
+                <img src="https://via.placeholder.com/150" alt="Service 2">
                 <div>
                     <h2>Service 2</h2>
                     <p>Description of service 2</p>
                 </div>
-                <img src="https://via.placeholder.com/150" alt="Service 2">
             </div>
-            <h2>Our Specialties</h2>
-            <div>
+            <h2>More Services</h2>
+            <div class="bullet-points">
                 <ul>
                     <li>Bullet point 1</li>
                     <li>Bullet point 2</li>
@@ -50,15 +54,18 @@
             </div>
         </section>
     </div>
-    <footer class="footer">
-        <div>
-            <p class="footer-text">&copy; 2023 Zelalem. All rights reserved.</p>
-        </div>
-        <div class="footer-links">
-            <a href="#" class="footer-link">X</a>
-            <a href="#" class="footer-link">G</a>
-            <a href="#" class="footer-link">L</a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2023 Dubisa. All rights reserved.</p>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-button">S</a>
+                <a href="#" class="social-button">T</a>
+                <a href="#" class="social-button">I</a>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>

@@ -169,6 +169,50 @@ nav a:hover {
     border-radius: 10px;
 }
 
+/* service page styling  */
+.service-grid{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    align-items: start;
+    width: 97%;
+    padding: 2px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top:20px;
+    border-radius: 15px;
+}
+.service-grid:hover {
+    background-color: #444;
+    transform: scaleX(1.01);
+    cursor: pointer;
+    transition-duration: 600ms;
+}
+.service-grid:hover > * {
+    color:white
+}
+
+.service-grid-item{
+    margin-left: auto;
+}
+.speciality-header{
+    text-decoration: underline;
+}
+.service-grid-2{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    align-items: start;
+    width: 97%;
+    padding: 2px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.service-grid-2 >ul >li{
+    margin:20px 10px;
+}
 @media (max-width: 700px) {
     #navbar {
         display: none;
@@ -201,25 +245,34 @@ nav a:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         order: -1;
     }
-        .about-content {
-            display: grid;
-            width: 100%;
-            row-gap: 10px;
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: start;
-            align-items: center;
-            margin-top: 30px;
-        }
-        .portfolio-grid-container {
-            display: grid;
-            row-gap: 10px;
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: center;
-            align-items: center;
-            width: 90%;
-            margin: 30px auto;
-            padding: 2px 4px;
-    
-        }
+    .about-content {
+        display: grid;
+        width: 100%;
+        row-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: start;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .portfolio-grid-container {
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 30px auto;
+        padding: 2px 4px;
 
+    }
+    .service-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: end;
+        align-items: start;
+        width: 97%;
+        padding: 2px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+    }
 }

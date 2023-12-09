@@ -254,7 +254,8 @@ nav a:hover {
 
    .contact-form-contact{
     min-height: 400px;
-    background-color: #666;
+    margin-top: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     width: 100%;
     padding:4px 0px;
@@ -263,7 +264,7 @@ nav a:hover {
     text-align: center;
     padding: 30px 0px;
     text-decoration: underline;
-    color:white
+    color:#444
    }
 
    .contact-form{
@@ -280,13 +281,11 @@ nav a:hover {
        margin-top: 20px;
        width: 80%;
        padding:10px 8px;
-       border-radius: 6px;
-      
+       outline: none;
    }
 
    .contact-form>input:focus,textarea:focus {
-        outline: blue;
-        color:#444
+      border:1px solid #333;
     }
 
     .contact-form>button{

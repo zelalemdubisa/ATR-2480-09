@@ -1,0 +1,9 @@
+.border{
+   border-radius:4px;
+}
+
+.hovered:hover{
+    background-color: #333 !important;
+    transition-duration: 500ms;
+    color:white !important;
+}

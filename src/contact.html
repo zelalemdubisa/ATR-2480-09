@@ -4,49 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="../dist/output.css" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+        <nav class="flex items-center justify-center py-4 bg-darkGrey w-full text-white">
+            <a href="index.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Home</a>
+            <a href="about.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">About</a>
+            <a href="portfolio.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Portfolio</a>
+            <a href="services.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Services</a>
+            <a href="contact.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Contact</a>
         </nav>
     </header>
 
-    <div>
+    <div class="py-4 my-3 bg-lightGrey text-white text-center w-full text-2xl font-extrabold max-w-6xl mx-auto rounded-xl">
         <h1>Contact Us</h1>
     </div>
 
-    <div>
-        <div><i class="material-icons">phone</i></div>
-        <div><i class="material-icons">email</i></div>
-        <div><i class="material-icons">place</i></div>
+    <div class="grid grid-cols-3 max-w-6xl gap-1 mx-auto text-center border-b py-2">
+        <div class="hover:scale-105 cursor-pointer duration-500"><i class="material-icons">phone</i></div>
+        <div class="hover:scale-105 cursor-pointer duration-500"><i class="material-icons">email</i></div>
+        <div class="hover:scale-105 cursor-pointer duration-500"><i class="material-icons">place</i></div>
     </div>
 
-    <div>
-        <form>
-            <div>
-                <input type="text" name="fullname" placeholder="Full Name">
-                <input type="text" name="phone" placeholder="Phone">
+    <div class="max-w-6xl mx-auto shadow-2xl p-3 my-6 rounded-xl">
+        <h4 class="text-xl font-bold text-darkGrey text-center underline underline-offset-8">Please Fill Form</h4>
+        <form class="py-10">
+            <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" name="fullname" placeholder="Full Name" class="outline-none border px-2 py-1 rounded-md">
+                <input type="text" name="phone" placeholder="Phone" class="outline-none border px-2 py-1 rounded-md">
+                <input type="email" name="email" placeholder="Email" class="outline-none border px-2 py-1 rounded-md">
+                <textarea name="message" placeholder="Message" class="outline-none border px-2 py-1 rounded-md"></textarea>
             </div>
-            <input type="email" name="email" placeholder="Email">
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
+                <button type="submit" class="my-6 px-6 py-1 rounded-md bg-darkGrey hoveer:bg-lightGrey hover:scale-105 hover:translate-x-1 text-white duration-500">Send</button>
         </form>
     </div>
 
-    <footer>
+  <footer class="flex items-center justify-between px-4 bg-darkGrey text-white py-4">
         <div>
-            <p>&copy; 2022 Zelalem. All rights reserved.</p>
+            <p>&copy; 2023 Zelalem. All rights reserved.</p>
         </div>
-        <div>
-            <a href="#">S</a>
-            <a href="#">T</a>
-            <a href="#">I</a>
+        <div class="flex items-center justify-center gap-x-2">
+            <a href="#" class="flex items-center justify-center rounded-full w-6 h-6 bg-darkGrey hover:scale-105 duration-500">X</a>
+            <a href="#" class="flex items-center justify-center rounded-full w-6 h-6 bg-darkGrey hover:scale-105 duration-500">G</a>
+            <a href="#" class="flex items-center justify-center rounded-full w-6 h-6 bg-darkGrey hover:scale-105 duration-500">L</a>
         </div>
     </footer>
 </body>

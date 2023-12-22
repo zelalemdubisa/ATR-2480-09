@@ -9,46 +9,59 @@
 </head>
 <body>
     <header>
-        <nav class="flex items-center justify-center py-4 bg-darkGrey w-full text-white">
-            <a href="index.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Home</a>
-            <a href="about.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">About</a>
-            <a href="portfolio.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Portfolio</a>
-            <a href="services.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Services</a>
-            <a href="contact.html" class="py-2 px-4 bg-lightGrey hover:bg-darkGrey">Contact</a>
+        <nav class="items-center justify-center hidden w-full py-4 text-white md:flex bg-darkGrey">
+            <a href="index.html" class="px-4 py-2 bg-lightGrey hover:bg-darkGrey">Home</a>
+            <a href="about.html" class="px-4 py-2 bg-lightGrey hover:bg-darkGrey">About</a>
+            <a href="portfolio.html" class="px-4 py-2 bg-lightGrey hover:bg-darkGrey">Portfolio</a>
+            <a href="services.html" class="px-4 py-2 bg-lightGrey hover:bg-darkGrey">Services</a>
+            <a href="contact.html" class="px-4 py-2 bg-lightGrey hover:bg-darkGrey">Contact</a>
         </nav>
+        <div class="relative flex items-start justify-start p-4 bg-darkGrey md:hidden">
+            <div class="text-2xl text-white cursor-pointer" id="hamburger">☰</div>
+            <nav class="absolute z-20 items-start justify-start hidden gap-1 p-8 text-white rounded-b-xl left-3 top-[4.2rem] bg-darkGrey"
+                id="mob-nav">
+                <a href="index.html" class="w-24 px-4 py-2 bg-lightGrey hover:bg-darkGrey">Home</a>
+                <a href="about.html" class="w-24 px-4 py-2 bg-lightGrey hover:bg-darkGrey">About</a>
+                <a href="portfolio.html" class="w-24 px-4 py-2 bg-lightGrey hover:bg-darkGrey">Portfolio</a>
+                <a href="services.html" class="w-24 px-4 py-2 bg-lightGrey hover:bg-darkGrey">Services</a>
+                <a href="contact.html" class="w-24 px-4 py-2 bg-lightGrey hover:bg-darkGrey">Contact</a>
+            </nav>
+        </div>
+        <script src="./script/nav.js"></script>
+    
     </header>
 
-    <div class="py-4 my-3 bg-lightGrey text-white text-center w-full text-2xl font-extrabold max-w-6xl mx-auto rounded-xl">
+    <div class="w-full max-w-6xl py-4 mx-auto my-3 text-2xl font-extrabold text-center text-white bg-lightGrey rounded-xl">
         <h1>Contact Us</h1>
     </div>
 
-    <div class="grid grid-cols-3 max-w-6xl gap-1 mx-auto text-center border-b py-2">
-        <div class="hover:scale-105 cursor-pointer duration-500"><i class="material-icons">phone</i></div>
-        <div class="hover:scale-105 cursor-pointer duration-500"><i class="material-icons">email</i></div>
-        <div class="hover:scale-105 cursor-pointer duration-500"><i class="material-icons">place</i></div>
+    <div class="grid max-w-6xl grid-cols-3 gap-1 py-2 mx-auto text-center border-b">
+        <div class="duration-500 cursor-pointer hover:scale-105"><i class="material-icons">phone</i></div>
+        <div class="duration-500 cursor-pointer hover:scale-105"><i class="material-icons">email</i></div>
+        <div class="duration-500 cursor-pointer hover:scale-105"><i class="material-icons">place</i></div>
     </div>
 
-    <div class="max-w-6xl mx-auto shadow-2xl p-3 my-6 rounded-xl">
-        <h4 class="text-xl font-bold text-darkGrey text-center underline underline-offset-8">Please Fill Form</h4>
+    <div class="max-w-6xl p-3 mx-auto my-6 shadow-2xl rounded-xl">
+        <h4 class="text-xl font-bold text-center underline text-darkGrey underline-offset-8">Please Fill Form</h4>
         <form class="py-10">
-            <div class="grid md:grid-cols-2 gap-4">
-                <input type="text" name="fullname" placeholder="Full Name" class="outline-none border px-2 py-1 rounded-md">
-                <input type="text" name="phone" placeholder="Phone" class="outline-none border px-2 py-1 rounded-md">
-                <input type="email" name="email" placeholder="Email" class="outline-none border px-2 py-1 rounded-md">
-                <textarea name="message" placeholder="Message" class="outline-none border px-2 py-1 rounded-md"></textarea>
+            <div class="grid gap-4 md:grid-cols-2">
+                <input type="text" name="fullname" placeholder="Full Name" class="px-2 py-1 border rounded-md outline-none">
+                <input type="text" name="phone" placeholder="Phone" class="px-2 py-1 border rounded-md outline-none">
+                <input type="email" name="email" placeholder="Email" class="px-2 py-1 border rounded-md outline-none">
+                <textarea name="message" placeholder="Message" class="px-2 py-1 border rounded-md outline-none"></textarea>
             </div>
-                <button type="submit" class="my-6 px-6 py-1 rounded-md bg-darkGrey hoveer:bg-lightGrey hover:scale-105 hover:translate-x-1 text-white duration-500">Send</button>
+                <button type="submit" class="px-6 py-1 my-6 text-white duration-500 rounded-md bg-darkGrey hoveer:bg-lightGrey hover:scale-105 hover:translate-x-1">Send</button>
         </form>
     </div>
 
-  <footer class="flex items-center justify-between px-4 bg-darkGrey text-white py-4">
+  <footer class="flex items-center justify-between px-4 py-4 text-white bg-darkGrey">
         <div>
             <p>&copy; 2023 Zelalem. All rights reserved.</p>
         </div>
         <div class="flex items-center justify-center gap-x-2">
-            <a href="#" class="flex items-center justify-center rounded-full w-6 h-6 bg-darkGrey hover:scale-105 duration-500">X</a>
-            <a href="#" class="flex items-center justify-center rounded-full w-6 h-6 bg-darkGrey hover:scale-105 duration-500">G</a>
-            <a href="#" class="flex items-center justify-center rounded-full w-6 h-6 bg-darkGrey hover:scale-105 duration-500">L</a>
+            <a href="#" class="flex items-center justify-center w-6 h-6 duration-500 rounded-full bg-darkGrey hover:scale-105">X</a>
+            <a href="#" class="flex items-center justify-center w-6 h-6 duration-500 rounded-full bg-darkGrey hover:scale-105">G</a>
+            <a href="#" class="flex items-center justify-center w-6 h-6 duration-500 rounded-full bg-darkGrey hover:scale-105">L</a>
         </div>
     </footer>
 </body>

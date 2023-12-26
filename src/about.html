@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title>About</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="C:\Users\RepTech\Desktop\New folder (2)\ATR-2480-09\Bootstrap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-darkGrey">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="w-full bg-dark">
+        <nav class="container container-fluid navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
+            <div class="w-full collapse navbar-collapse" id="navbarNav">
+                <ul class="ml-auto navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
@@ -42,57 +40,62 @@
             <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla purus ut nisi mollis, vitae posuere lorem congue.</p>
         </section>
 
-        <section class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-md-6 mb-4">
-                    <img src="https://via.placeholder.com/150" alt="About 1" class="w-100 rounded-md cursor-pointer hover-scale-rotate">
+        <section class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="mb-4 col-md-6">
+                <img src="https://via.placeholder.com/150" alt="About 1"
+                    class="w-64 h-64 rounded-md cursor-pointer hover:scale-105 hover:rotate-1">
+                <div>
+                    <h2 class="text-2xl font-bold">About 1</h2>
+                    <p>Description of about 1</p>
+                    <a href="#" class="underline underline-offset-4 text-primary">Read More</a>
+                </div>
+                </div>
+
+                <div class="mb-4 col-md-6">
+                        <img src="https://via.placeholder.com/150" alt="About 1"
+                            class="w-64 h-64 rounded-md cursor-pointer hover:scale-105 hover:rotate-1">
                     <div>
-                        <h2 class="text-center font-weight-bold">About 1</h2>
-                        <p class="text-center">Description of about 1</p>
-                        <a href="#" class="d-block text-center text-sky-500">Read More</a>
+                        <h2 class="text-2xl font-weight-bold">About 2</h2>
+                        <p >Description of about 2</p>
+                        <a href="#" class="underline underline-offset-4 text-primary">Read More</a>
                     </div>
                 </div>
 
-                <div class="col-md-6 mb-4">
-                    <img src="https://via.placeholder.com/150" alt="About 2" class="w-100 rounded-md cursor-pointer hover-scale-rotate">
+                <div class="mb-4 col-md-6">
+                    <img src="https://via.placeholder.com/150" alt="About 1"
+                        class="w-64 h-64 rounded-md cursor-pointer hover:scale-105 hover:rotate-1">
                     <div>
-                        <h2 class="text-center font-weight-bold">About 2</h2>
-                        <p class="text-center">Description of about 2</p>
-                        <a href="#" class="d-block text-center text-sky-500">Read More</a>
+                        <h2 class="text-2xl font-weight-bold">About 3</h2>
+                        <p class="text-2xl">Description of about 3</p>
+                        <a href="#" class="underline underline-offset-4 text-primary">Read More</a>
                     </div>
                 </div>
 
-                <div class="col-md-6 mb-4">
-                    <img src="https://via.placeholder.com/150" alt="About 3" class="w-100 rounded-md cursor-pointer hover-scale-rotate">
+                <div class="mb-4 col-md-6">
+                        <img src="https://via.placeholder.com/150" alt="About 1"
+                            class="w-64 h-64 rounded-md cursor-pointer hover:scale-105 hover:rotate-1">
                     <div>
-                        <h2 class="text-center font-weight-bold">About 3</h2>
-                        <p class="text-center">Description of about 3</p>
-                        <a href="#" class="d-block text-center text-sky-500">Read More</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <img src="https://via.placeholder.com/150" alt="About 4" class="w-100 rounded-md cursor-pointer hover-scale-rotate">
-                    <div>
-                        <h2 class="text-center font-weight-bold">About 4</h2>
-                        <p class="text-center">Description of about 4</p>
-                        <a href="#" class="d-block text-center text-sky-500">Read More</a>
+                        <h2 class="text-2xl font-weight-bold">About 4</h2>
+                        <p class="text-2xl">Description of about 4</p>
+                        <a href="#" class="underline underline-offset-4 text-primary">Read More</a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <footer class="bg-darkGrey text-white py-4">
-        <div class="container d-flex justify-content-between">
-            <div>
-                <p>&copy; 2023 Zelalem. All rights reserved.</p>
-            </div>
-            <div class="d-flex gap-2">
-                <a href="#" class="rounded-circle bg-darkGrey hover-scale">X</a>
-                <a href="#" class="rounded-circle bg-darkGrey hover-scale">G</a>
-                <a href="#" class="rounded-circle bg-darkGrey hover-scale">L</a>
-            </div>
+    <footer class="px-4 py-4 text-white d-flex align-items-center justify-content-between bg-dark">
+        <div>
+            <p>© 2023 Zelalem. All rights reserved.</p>
+        </div>
+        <div class="gap-2 d-flex align-items-center justify-content-center">
+            <a href="#"
+                class="w-6 h-6 duration-500 d-flex align-items-center justify-content-center rounded-circle bg-dark hover-scale-105">X</a>
+            <a href="#"
+                class="w-6 h-6 duration-500 d-flex align-items-center justify-content-center rounded-circle bg-dark hover-scale-105">G</a>
+            <a href="#"
+                class="w-6 h-6 duration-500 d-flex align-items-center justify-content-center rounded-circle bg-dark hover-scale-105">L</a>
         </div>
     </footer>
 </body>
